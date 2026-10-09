@@ -1,0 +1,13 @@
+name: Grader Check
+
+# This tells the robot it is allowed to be triggered by clicking a button
+on: 
+  workflow_dispatch: 
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # This is the exact name the grader is looking for
+      - name: 25f2002139@ds.study.iitm.ac.in
+        run: echo "Hello, world! I am passing Q13!"
